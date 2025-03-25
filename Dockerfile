@@ -1,4 +1,4 @@
-FROM openjdk:latest
+FROM openjdk:25-jdk
 RUN dnf update -y && \
     dnf upgrade -y openssl && \
     dnf clean all
