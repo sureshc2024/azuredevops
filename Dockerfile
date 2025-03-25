@@ -1,4 +1,7 @@
-FROM openjdk:25
+FROM openjdk:latest
+RUN dnf update -y && \
+    dnf upgrade -y openssl && \
+    dnf clean all
 
 WORKDIR /app
 
